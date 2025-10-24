@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Installetion = () => {
+const Installation = () => {
   return (
     <div>Installetion</div>
   )
 }
 
-export default Installetion
+export default Installation

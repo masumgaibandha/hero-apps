@@ -1,0 +1,290 @@
+[
+  {
+    "image": "https://i.ibb.co/3mwyhv1s/unnamed.png",
+    "title": "WhatsApp: Simple. Reliable. Private.",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "Fast, simple and secure messaging app to chat, call and share with anyone worldwide.",
+    "size": 52,
+    "reviews": 1842,
+    "ratingAvg": 4.6,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 123 },
+      { "name": "2 star", "count": 214 },
+      { "name": "3 star", "count": 412 },
+      { "name": "4 star", "count": 630 },
+      { "name": "5 star", "count": 1463 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/jvVyZmtC/igg.png",
+    "title": "Instagram: Capture & Share the World",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Share photos and reels, follow friends and creators, and explore trending content.",
+    "size": 78,
+    "reviews": 4120,
+    "ratingAvg": 4.8,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 2190 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/tiktok.com",
+    "title": "TikTok: Real Videos, Real People",
+    "companyName": "ByteDance Ltd.",
+    "id": 3,
+    "description": "Short-form videos to watch, create and share with music, effects and trends.",
+    "size": 66,
+    "reviews": 990,
+    "ratingAvg": 4.3,
+    "downloads": "2B+",
+    "ratings": [
+      { "name": "1 star", "count": 123 },
+      { "name": "2 star", "count": 208 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 480 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/spotify.com",
+    "title": "Spotify: Music & Podcasts",
+    "companyName": "Spotify AB",
+    "id": 4,
+    "description": "Listen to millions of songs and podcasts, anytime, anywhere.",
+    "size": 41,
+    "reviews": 1270,
+    "ratingAvg": 4.5,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 230 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 780 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/xKTL9h9C/images.jpg",
+    "title": "Zoom: One Platform to Connect",
+    "companyName": "Zoom Video Communications",
+    "id": 5,
+    "description": "HD video meetings, team chat, screen sharing and webinars in one place.",
+    "size": 38,
+    "reviews": 2100,
+    "ratingAvg": 4.7,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 920 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/duolingo.com",
+    "title": "Duolingo: Language Lessons",
+    "companyName": "Duolingo, Inc.",
+    "id": 6,
+    "description": "Learn languages with quick, gamified lessons in reading, writing and speaking.",
+    "size": 60,
+    "reviews": 1875,
+    "ratingAvg": 4.6,
+    "downloads": "300M+",
+    "ratings": [
+      { "name": "1 star", "count": 170 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 370 },
+      { "name": "4 star", "count": 590 },
+      { "name": "5 star", "count": 960 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/canva.com",
+    "title": "Canva: Design Photos & Videos",
+    "companyName": "Canva Pty Ltd.",
+    "id": 7,
+    "description": "Create social posts, logos, videos, and more with ready-to-use templates.",
+    "size": 50,
+    "reviews": 1120,
+    "ratingAvg": 4.2,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 340 },
+      { "name": "5 star", "count": 420 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/uber.com",
+    "title": "Uber: Ride Hailing & Delivery",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 8,
+    "description": "Request rides and track drivers in real time; also order food delivery.",
+    "size": 95,
+    "reviews": 3240,
+    "ratingAvg": 4.4,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 410 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 960 },
+      { "name": "5 star", "count": 1040 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/TC1QcFH/unnamed.jpg",
+    "title": "Adobe Acrobat Reader: PDF Editor",
+    "companyName": "Adobe Inc.",
+    "id": 9,
+    "description": "View, edit, sign and share PDFs anywhere with cloud sync across devices.",
+    "size": 72,
+    "reviews": 940,
+    "ratingAvg": 4.5,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/netflix.com",
+    "title": "Netflix: Watch TV & Movies",
+    "companyName": "Netflix, Inc.",
+    "id": 10,
+    "description": "Watch series, movies and documentaries—download to watch offline on mobile.",
+    "size": 81,
+    "reviews": 2450,
+    "ratingAvg": 4.7,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 1040 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/telegram.org",
+    "title": "Telegram: Take Back Your Privacy",
+    "companyName": "Telegram FZ-LLC",
+    "id": 11,
+    "description": "Cloud-based messaging with large groups, channels, bots and full privacy control.",
+    "size": 64,
+    "reviews": 1580,
+    "ratingAvg": 4.8,
+    "downloads": "400M+",
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 410 },
+      { "name": "5 star", "count": 790 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/microsoft.com",
+    "title": "Microsoft Outlook: Email & Calendar",
+    "companyName": "Microsoft Corporation",
+    "id": 12,
+    "description": "Email and calendar in one app—manage inbox, schedule meetings and stay organized.",
+    "size": 58,
+    "reviews": 3210,
+    "ratingAvg": 4.1,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 510 },
+      { "name": "3 star", "count": 760 },
+      { "name": "4 star", "count": 850 },
+      { "name": "5 star", "count": 670 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/dropbox.com",
+    "title": "Dropbox: Cloud Storage",
+    "companyName": "Dropbox Inc.",
+    "id": 13,
+    "description": "Secure cloud storage to back up files, share links and collaborate from anywhere.",
+    "size": 91,
+    "reviews": 2750,
+    "ratingAvg": 4.9,
+    "downloads": "600M+",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 390 },
+      { "name": "5 star", "count": 2050 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/google.com",
+    "title": "Google Maps: Navigation & Transit",
+    "companyName": "Google LLC",
+    "id": 14,
+    "description": "Real-time GPS navigation, live traffic, transit info and offline maps for travel.",
+    "size": 105,
+    "reviews": 4670,
+    "ratingAvg": 4.4,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 390 },
+      { "name": "2 star", "count": 570 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 1330 },
+      { "name": "5 star", "count": 1400 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/amazon.com",
+    "title": "Amazon Shopping: Everything at your Door",
+    "companyName": "Amazon Mobile LLC",
+    "id": 15,
+    "description": "Search, compare and buy from millions of products with fast checkout and tracking.",
+    "size": 70,
+    "reviews": 2880,
+    "ratingAvg": 4.5,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 830 },
+      { "name": "5 star", "count": 1160 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/pinterest.com",
+    "title": "Pinterest: Discover Ideas & Inspiration",
+    "companyName": "Pinterest, Inc.",
+    "id": 16,
+    "description": "Discover ideas for recipes, home décor, fashion and DIY projects.",
+    "size": 62,
+    "reviews": 1930,
+    "ratingAvg": 4.6,
+    "downloads": "250M+",
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 870 }
+    ]
+  }
+]
