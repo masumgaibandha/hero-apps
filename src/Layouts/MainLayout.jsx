@@ -34,5 +34,5 @@ export const MainLayout = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
