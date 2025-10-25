@@ -6,3 +6,7 @@
 {
   font-family: "Inter", sans-serif;
 }
+@layer utilities {
+  .center-screen { @apply min-h-screen flex flex-col items-center justify-center text-center gap-4 px-4; }
+  .empty-img { @apply max-w-xs w-full; }
+}

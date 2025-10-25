@@ -5,7 +5,6 @@ import AppsCard from '../Components/AppsCard'
 import Banner from '../Components/Banner'
 
 const Home = () => {
-  // const apps = useLoaderData ()
   const {apps, loading, error} = useApps()
    
   const featuredApps = apps.slice(0, 8)

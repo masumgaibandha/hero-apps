@@ -3,6 +3,13 @@ import logo from "../assets/logo.png"
 import { Link, NavLink } from 'react-router'
 
 const Navbar = () => {
+  const activeLink = ({ isActive }) =>
+  `px-2 py-1 transition ${
+    isActive
+      ? 'underline underline-offset-8 decoration-2 decoration-[#632ee3]'
+      : 'hover:underline hover:underline-offset-8'
+  }`;
+
   return (
     <nav className="navbar bg-base-100 shadow-sm">
   <div className=' flex items-center container mx-auto'>
@@ -17,24 +24,23 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 font-semibold">
-      <li>
-        <NavLink className="bg-gradient-to-r from-[#632ee3] to-[#9f62f2] bg-clip-text text-transparent" to='/'>Home</NavLink>
-       </li>
-      <li>
-        <NavLink to='/apps'>Apps</NavLink>
-       </li>
-      <li>
-        <NavLink to='/installation'>Installation</NavLink>
-       </li>
+      <li><NavLink to='/' className={activeLink}>Home</NavLink></li>            
+     <li><NavLink to='/apps' className={activeLink}>Apps</NavLink></li>       
+     <li><NavLink to='/installation' className={activeLink}>Installation</NavLink></li> 
       
     </ul>
   </div>
 
   <div className="navbar-end">
-  <Link to="/" className="btn rounded-[4px] border-0 text-white gap-2 bg-gradient-to-tr from-[#632ee3] to-[#9f62f2] hover:opacity-90">
-    <img src="https://i.ibb.co/dwS1fJBW/fi-2111432.png" alt="Git" className="w-5" />
-    <span>Contribute</span>
-  </Link>
+  <a
+  href="https://github.com/masumgaibandha"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn rounded-[4px] border-0 text-white gap-2 bg-gradient-to-tr from-[#632ee3] to-[#9f62f2] hover:opacity-90"
+>
+  <img src="https://i.ibb.co/dwS1fJBW/fi-2111432.png" alt="Git" className="w-5" />
+  <span>Contribute</span>
+</a>
 </div>
 
   </div>

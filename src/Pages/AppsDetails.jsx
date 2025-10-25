@@ -1,32 +1,82 @@
 import React, { useState } from "react";
-import { data, useParams } from "react-router";
+import { data, Link, Navigate, useParams } from "react-router";
 import useApps from "../hook/useApps";
-import {Bar,BarChart,CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis,
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
 import { toast, ToastContainer } from "react-toastify";
 
 const AppsDetails = () => {
   const { id } = useParams();
   const { apps, loading, error } = useApps();
-const [buttonText, setButtonText] = useState("Install Now");
+  const [installed, setInstalled] = useState(false);
+  const [buttonText, setButtonText] = useState("Install Now");
+
+  React.useEffect(() => {
+    const list = JSON.parse(localStorage.getItem("installation") || "[]");
+    const isInstalled = list.some((a) => String(a.id) === String(id));
+    setInstalled(isInstalled);
+    setButtonText(isInstalled ? "Installed" : "Install Now");
+  }, [id]);
+
   const app = apps.find((a) => String(a.id) === id);
-  if (loading) return <p>Loading....</p>;
+  if (loading) {
+    return (
+      <div className="min-h-[50vh] flex items-center justify-center">
+        <span className="loading loading-spinner loading-lg text-error"></span>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div className="min-h-[50vh] flex flex-col items-center justify-center text-center gap-3">
+        <h1 className="text-3xl font-bold text-red-500">Failed to load app</h1>
+        <Link to="/" className="btn ">
+          Go Home
+        </Link>
+      </div>
+    );
+  }
+  if (!app) {
+    return (
+      <div className="min-h-[50vh] flex flex-col items-center justify-center text-center gap-4 px-4">
+        <img
+          src="https://i.ibb.co/HpMScGSN/error-404.png"
+          alt="Not found"
+          className="max-w-xs w-full"
+        />
+        <h1 className="text-4xl font-bold">App not found</h1>
+        <p>The app you're looking for doesn't exist.</p>
+        <Link
+          to="/"
+          className="btn mt-2 bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white"
+        >
+          Go Home
+        </Link>
+      </div>
+    );
+  }
+
   const { image, title, downloads, ratingAvg, reviews, size, description } =
     app || {};
 
-    
   const handleAddToInst = () => {
-    const existingList = JSON.parse(localStorage.getItem("installation") || "[]");
-    let updatedList = [];
-    if (existingList) {
-      const isDuplicate = existingList.some((a) => a.id === app.id);
-      if (isDuplicate) return ;
-      updatedList = [...existingList, app];
-    } else {
-      updatedList.push(app);
+    const existing = JSON.parse(localStorage.getItem("installation") || "[]");
+    if (existing.some((a) => a.id === app.id)) {
+      setInstalled(true);
+      setButtonText("Installed");
+      return;
     }
-    localStorage.setItem("installation", JSON.stringify(updatedList));
-    
+    const updated = [...existing, app];
+    localStorage.setItem("installation", JSON.stringify(updated));
+    setInstalled(true);
     setButtonText("Installed");
     toast.success(`${title} — Installed Successfully`);
   };
@@ -100,8 +150,18 @@ const [buttonText, setButtonText] = useState("Install Now");
               </div>
               <button
                 onClick={handleAddToInst}
-                className="btn bg-[#00D390] text-white text-xl">
-                {buttonText} <span>({size} MB)</span>
+                disabled={installed}
+                className="btn text-white text-xl bg-[#00D390]
+             disabled:bg-[#00D390] disabled:text-white
+             disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {installed ? (
+                  "Installed"
+                ) : (
+                  <>
+                    Install Now <span>({size} MB)</span>
+                  </>
+                )}
               </button>
             </div>
           </div>
@@ -133,8 +193,7 @@ const [buttonText, setButtonText] = useState("Install Now");
           </div>
         </div>
 
-        {/* End Rating */}
-
+      
         <div className="border-b border-gray-300">
           <h1 className="text-2xl font-semibold pt-2">Description</h1>
           <p>{description}</p>
@@ -142,18 +201,18 @@ const [buttonText, setButtonText] = useState("Install Now");
           <div className="flex flex-col space-y-5 py-2 "></div>
         </div>
       </section>
-      <ToastContainer 
+      <ToastContainer
         position="top-center"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick={false}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="colored"/>
-
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 };

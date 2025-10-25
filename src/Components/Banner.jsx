@@ -5,10 +5,10 @@ const Banner = () => {
     <div>
       
       <div>
-        <h1 className='font-bold text-[72px] text-center scroll-py-1.5'>We Build 
+        <h1 className='font-bold text-[72px] text-center scroll-py-1.5'>We Build <br/>
           <span className='bg-gradient-to-r from-[#632ee3] to-[#9f62f2] bg-clip-text text-transparent font-bold'> Productive</span> Apps
         </h1>
-        <p className='text-center pb-5'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+        <p className='text-center pb-5'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br/>Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
       <div className='flex justify-center py-5 gap-3'>
         <button className="btn text-xl font-semibold bg-[#FFFFFF] p-5"> 

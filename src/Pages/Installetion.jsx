@@ -32,8 +32,13 @@ const handleRemove = (id, title) =>{
 
   return (
     <div className='bg-[#D2D2D2] h-screen'>
-      {/* Installetion: {installation.length} */}
-<div className='container mx-auto flex justify-between items-center py-3'>
+      <div className='text-center py-10 space-y-3'>
+    <h1 className='font-bold text-5xl'>Your Installed Apps</h1>
+    <p className='text-xl'>Explore All Trending Apps on the Market developed by us</p>
+  </div>
+
+<div className='container mx-auto flex justify-between items-center py-3 '>
+  
     <h1 className='font-semibold text-2xl'>
       <span>
         ({sortedItem.length})
@@ -52,10 +57,9 @@ const handleRemove = (id, title) =>{
             <div className='container mx-auto bg-base-100 shadow-sm p-2 rounded'>
       
 
-    <div className="card card-side ">
-  <div className="flex w-full items-center justify-between p-4 container mx-auto">
-    {/* LEFT: image + info */}
-    <div className="flex items-center gap-4">
+    <div className="card card-side">
+  <div className="flex w-full items-center justify-between p-4 container mx-auto ">
+       <div className="flex items-center gap-4">
       <img
         src={a.image}
         alt="Forest app"
@@ -79,7 +83,7 @@ const handleRemove = (id, title) =>{
       </div>
     </div>
 
-    {/* RIGHT: button */}
+   
     <div className="shrink-0">
       <button onClick={() => handleRemove(a.id, a.title)} className="btn text-white bg-[#00D390]">
   Uninstall

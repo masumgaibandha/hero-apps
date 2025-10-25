@@ -1,16 +1,17 @@
-# React + Vite
+App Name: HERO.IO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description: HERO.IO is a modern web app that showcases and manages mobile applications. It includes sections like Home, Apps, App Details, and Installation Management. Users can browse, search, and install apps (stored locally), with clean UI transitions, loaders, and responsive layouts.
+Every app displays real-time stats — downloads, reviews, and ratings — using Recharts. The app is styled with Tailwind CSS and DaisyUI, ensuring a professional look and smooth experience across devices.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used: 
+Frontend	React (Vite)
+Routing	React Router DOM
+Styling	Tailwind CSS, DaisyUI
+Charts	Recharts
+Notifications	React Toastify
+Data Handling	Axios, Local Storage
+Build Tool	Vite
 
-## React Compiler
+Developed by: Abdullah Al Masum
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
