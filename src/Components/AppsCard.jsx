@@ -5,7 +5,7 @@ const AppsCard = ({app}) => {
   const {image, title, downloads, ratingAvg, id} = app;
   return (
     <div>
-      <Link to={`/app/${id}`} className=' bg-base-100 rounded space-y-3 p-4 max-w-[348px] h-[435px] cursor-pointer hover:scale-105 transition'>
+      <Link to={`/app/${id}`} className='block bg-base-100 rounded-2xl space-y-3 p-4 cursor-pointer transition-shadow'>
             <div className='flex justify-center flex-col overflow-hidden'>
             <img src={app.image} alt="" className='rounded-2xl w-full object-cover'/>
             <h1 className='pt-3 text-center'>{app.title}</h1>
